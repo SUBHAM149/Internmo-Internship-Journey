@@ -1,3 +1,4 @@
+
 <!-- ==================== HERO SECTION ==================== -->
 
 <p align="center">
@@ -27,7 +28,7 @@
   </a>
 </p>
 
-
+---
 
 <!-- ==================== ABOUT ==================== -->
 
@@ -54,7 +55,7 @@ My focus is on transforming technical knowledge into practical implementations a
 - Improve analytical and logical thinking.
 - Create a strong technical portfolio.
 
-
+---
 
 <!-- ==================== INTERNSHIP OVERVIEW ==================== -->
 
@@ -121,7 +122,7 @@ My focus is on transforming technical knowledge into practical implementations a
 
 > The actual curriculum and technologies will be updated according to the assigned internship track.
 
-
+---
 
 <!-- ==================== TECHNOLOGY STACK ==================== -->
 
@@ -169,6 +170,7 @@ My focus is on transforming technical knowledge into practical implementations a
 
 *These represent my existing skills and learning interests. They are not a claim that every technology is covered in the internship.*
 
+---
 
 <!-- ==================== LEARNING TRACKER ==================== -->
 
@@ -189,7 +191,7 @@ My focus is on transforming technical knowledge into practical implementations a
   <img src="https://img.shields.io/badge/PROGRESS-UPDATED%20REGULARLY-2563EB?style=for-the-badge"/>
 </p>
 
-
+---
 
 <!-- ==================== REPOSITORY STRUCTURE ==================== -->
 
@@ -223,7 +225,9 @@ Internmo-Internship-Journey/
 ├── Screenshots/
 │
 └── Certificates/
+```
 
+---
 
 <!-- ==================== PROJECT SHOWCASE ==================== -->
 
@@ -265,7 +269,7 @@ Internmo-Internship-Journey/
 | Documentation | Maintain professional project records |
 | Communication | Improve professional collaboration |
 
-
+---
 
 ## 🏆 Achievements & Certifications
 
@@ -276,7 +280,7 @@ This section will be updated with verified achievements and certificates.
 - Project milestones — To be updated
 - Other achievements — To be updated
 
-
+---
 
 <!-- ==================== CONNECT ==================== -->
 
@@ -298,30 +302,22 @@ This section will be updated with verified achievements and certificates.
   <b>Let's Connect • Collaborate • Create</b>
 </p>
 
+---
 
-
-
-
-💡 My Philosophy
-
-
+<!-- ==================== FOOTER ==================== -->
 
 <p align="center">
-<b>Great things are built through consistency, curiosity, and continuous improvement.</b>
-<br/>
-Every assignment is an opportunity. Every project is an experience. Every challenge is a lesson.
-<br/>  <b>Subham Behera</b>
-<br/>
-Aspiring Software Engineer | Lifelong Learner
-<br/>
-<sub>© 2026 Subham Behera. All Rights Reserved.</sub>
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=150&color=0:090E1A,45:172554,75:312E81,100:0F766E&section=footer" width="100%" alt="Footer"/>
 </p>
-</p>
+
+<h2 align="center">✨ LEARN WITH PURPOSE.</h2>
+<h2 align="center">BUILD WITH PASSION.</h2>
+<h2 align="center">GROW WITH CONSISTENCY. 🚀</h2>
 
 <p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&height=130&section=footer&color=0:0f172a,50:164e63,100:0891b2" width="100%" alt="Footer banner"/>
+  <b>SUBHAM BEHERA</b>
+  <br/>
+  <sub>Aspiring Software Engineer | Java Full Stack | Data Analytics | AI</sub>
+  <br/><br/>
+  <sub>© 2026 Subham Behera. All rights reserved.</sub>
 </p>
-
-<h3 align="center">THANK YOU FOR VISITING MY INTERNSHIP PORTFOLIO!</h3>
-
-<p align="center">
