@@ -1,0 +1,198 @@
+
+# 📅 DAY 2 – DATABASE DESIGN & ER DIAGRAM
+
+**Objective:** Design the complete relational database structure before implementing entity classes.
+
+### 1. Identify Core Database Tables
+
+| No. | Table Name | Purpose |
+|---|---|---|
+| 1 | users | User login information |
+| 2 | roles | User roles |
+| 3 | user_roles | User-role mapping |
+| 4 | hospitals | Hospital details |
+| 5 | departments | Hospital departments |
+| 6 | doctors | Doctor profiles |
+| 7 | patients | Patient information |
+| 8 | appointments | Appointment details |
+| 9 | medical_records | Patient medical history |
+| 10 | prescriptions | Doctor prescriptions |
+| 11 | billing | Patient bills |
+| 12 | payments | Payment transactions |
+| 13 | pharmacy | Medicine information |
+| 14 | notifications | Notifications |
+| 15 | refresh_tokens | JWT refresh tokens |
+
+Additional tables may be introduced when required by individual modules.
+
+### 2. Database Relationships
+
+Understand and design:
+
+- Hospital → Departments (One-to-Many)
+- Department → Doctors (One-to-Many)
+- Hospital → Doctors (One-to-Many)
+- Patient → Appointments (One-to-Many)
+- Doctor → Appointments (One-to-Many)
+- Patient → Medical Records (One-to-Many)
+- Doctor → Prescriptions (One-to-Many)
+- User ↔ Roles (Many-to-Many)
+- Patient → Billing (One-to-Many)
+- Billing → Payments (One-to-Many)
+
+### 3. Database Concepts
+
+Study and implement:
+
+- Primary Key (PK)
+- Foreign Key (FK)
+- One-to-One
+- One-to-Many
+- Many-to-Many
+- Unique Constraints
+- NOT NULL Constraints
+- Normalization (1NF, 2NF, 3NF)
+- Database Indexing
+- Cascade Operations
+
+### 4. Design Table Structures
+
+**Hospitals Table**
+
+| Column | Data Type | Constraint |
+|---|---|---|
+| id | BIGINT | Primary Key |
+| hospital_name | VARCHAR(150) | NOT NULL |
+| email | VARCHAR(100) | UNIQUE |
+| phone | VARCHAR(15) | |
+| address | VARCHAR(255) | |
+| created_at | DATETIME | |
+
+**Departments Table**
+
+| Column | Data Type | Constraint |
+|---|---|---|
+| id | BIGINT | Primary Key |
+| department_name | VARCHAR(100) | NOT NULL |
+| description | VARCHAR(255) | |
+| hospital_id | BIGINT | Foreign Key |
+
+### 5. SQL Practice
+
+```sql
+USE medcore_hms_db;
+
+SHOW TABLES;
+
+CREATE TABLE hospitals (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    hospital_name VARCHAR(150) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    phone VARCHAR(15),
+    address VARCHAR(255),
+    created_at DATETIME
+);
+
+CREATE TABLE departments (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    department_name VARCHAR(100) NOT NULL,
+    description VARCHAR(255),
+    hospital_id BIGINT,
+    CONSTRAINT fk_department_hospital
+    FOREIGN KEY (hospital_id)
+    REFERENCES hospitals(id)
+);
+
+SHOW TABLES;
+
+DESC hospitals;
+
+DESC departments;
+```
+
+### 6. Learn JPA Annotations
+
+Understand the following annotations:
+
+- @Entity
+- @Table
+- @Id
+- @GeneratedValue
+- @Column
+- @OneToOne
+- @OneToMany
+- @ManyToOne
+- @ManyToMany
+- @JoinColumn
+
+### 7. ER Diagram
+- Create a complete ER diagram.
+- Identify all entities.
+- Identify primary keys.
+- Identify foreign keys.
+- Connect all relationships.
+- Verify database structure.
+
+### DAY 2 DELIVERABLES
+
+- [ ] All core database entities identified.
+- [ ] Complete ER diagram prepared.
+- [ ] Primary keys identified.
+- [ ] Foreign keys identified.
+- [ ] Table structures designed.
+- [ ] Relationships understood.
+- [ ] Database normalization completed.
+- [ ] JPA relationships understood.
+- [ ] Initial SQL tables created.
+
+---
+
+# 📊 WEEK 1 – REMAINING PLAN
+
+| Day | Tasks |
+|---|---|
+| Day 1 | Spring Boot Setup & Architecture |
+| Day 2 | Database Design & ER Diagram |
+| Day 3 | Entity Classes & Database Relationships |
+| Day 4 | Authentication & JWT Implementation |
+| Day 5 | Password Encryption, Refresh Tokens & OTP |
+| Day 6 | Role-Based Access Control (RBAC) |
+| Day 7 | Hospital & Department Management Foundation |
+
+---
+
+# 🎯 WEEK 1 FINAL EXPECTED OUTCOME
+
+By the end of Week 1:
+
+1. Complete Spring Boot project setup.
+2. Professional backend package architecture.
+3. MySQL database integration.
+4. Database ER diagram.
+5. Entity and relationship design.
+6. JWT authentication foundation.
+7. Password encryption.
+8. Role-Based Access Control.
+9. Hospital management foundation.
+10. Department management foundation.
+
+---
+
+# 🚀 PROJECT DEVELOPMENT RULES
+
+1. Complete one day before moving to the next.
+2. Use proper Java naming conventions.
+3. Follow layered architecture.
+4. Use normal Java POJOs without Lombok.
+5. Write clean, reusable code.
+6. Test APIs using Postman.
+7. Document APIs using Swagger.
+8. Maintain GitHub commits daily.
+9. Fix errors before proceeding.
+10. Build the project step by step.
+
+**Development Approach:** Learn → Design → Develop → Test → Commit → Next Task.
+
+**Project Goal:** Build an enterprise-grade Hospital Management System using industry-standard Java Full Stack technologies.
+
+**Next Action:** Complete DAY 1 and report `DAY 1 COMPLETED`.
