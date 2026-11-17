@@ -1,0 +1,133 @@
+
+# 🏥 MedCore HMS – WEEK 1 PROJECT PLAN
+
+**Project:** MedCore Hospital Management System  
+**Architecture:** Modular Monolith  
+**Duration:** 28 Days  
+**Week:** 1  
+**Technology:** Java 21, Spring Boot 3.5.4, MySQL, Spring Security, JWT, Spring Data JPA, Hibernate, Redis, Swagger, React, Bootstrap.
+
+---
+
+# 🎯 WEEK 1 – PROJECT FOUNDATION & BACKEND DEVELOPMENT
+
+**Main Objective:** Establish the complete backend architecture, database design, authentication, authorization and initial hospital management modules.
+
+---
+
+# 📅 DAY 1 – SPRING BOOT PROJECT SETUP & ARCHITECTURE
+
+**Objective:** Create and configure the complete Spring Boot Maven project.
+
+### 1. Project Setup
+- Create Spring Boot Maven project.
+- Configure Java 21.
+- Configure Spring Boot 3.5.4.
+- Project Name: MedCore-HMS.
+- Base Package: `com.medcore.hms`.
+- Configure Maven dependencies.
+
+### 2. Required Dependencies
+1. Spring Web
+2. Spring Data JPA
+3. Spring Security
+4. MySQL Driver
+5. Validation
+6. Spring Boot DevTools
+7. Springdoc OpenAPI / Swagger
+8. Spring Data Redis
+9. JWT Dependencies
+10. Spring Boot Actuator
+
+### 3. Create Package Structure
+
+```text
+com.medcore.hms
+│
+├── MedCoreHmsApplication.java
+│
+├── config
+├── security
+├── common
+│   ├── constants
+│   ├── response
+│   └── enums
+│
+├── exception
+├── validation
+├── util
+│
+└── modules
+    ├── auth
+    ├── user
+    ├── role
+    ├── hospital
+    ├── department
+    ├── doctor
+    ├── patient
+    ├── appointment
+    ├── medicalrecord
+    ├── prescription
+    ├── billing
+    ├── pharmacy
+    └── notification
+```
+
+Each module will have separate packages for:
+- controller
+- service
+- service.impl
+- repository
+- entity
+- dto
+- mapper
+
+### 4. MySQL Database Setup
+
+```sql
+CREATE DATABASE medcore_hms_db;
+
+USE medcore_hms_db;
+
+SHOW DATABASES;
+```
+
+### 5. Configure application.properties
+
+```properties
+spring.application.name=MedCore-HMS
+
+server.port=8080
+
+spring.datasource.url=jdbc:mysql://localhost:3306/medcore_hms_db
+spring.datasource.username=root
+spring.datasource.password=YOUR_PASSWORD
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+```
+
+Replace `YOUR_PASSWORD` with your MySQL password.
+
+### 6. Run Application
+- Run MedCoreHmsApplication.java.
+- Verify Spring Boot startup.
+- Verify MySQL connection.
+- Check port 8080.
+- Resolve all errors.
+
+### DAY 1 DELIVERABLES
+
+- [ ] Spring Boot project created.
+- [ ] Java 21 configured.
+- [ ] Maven dependencies added.
+- [ ] Complete package structure created.
+- [ ] MySQL database created.
+- [ ] application.properties configured.
+- [ ] Application successfully running.
+
+---
+
