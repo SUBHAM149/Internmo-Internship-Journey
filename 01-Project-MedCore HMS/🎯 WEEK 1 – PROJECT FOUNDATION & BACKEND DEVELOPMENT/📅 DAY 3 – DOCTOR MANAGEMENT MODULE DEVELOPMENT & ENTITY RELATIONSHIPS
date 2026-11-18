@@ -1,0 +1,149 @@
+# MedCore HMS – DAY 3 Progress Report
+
+**Project:** MedCore – Hospital Management System  
+**Day:** DAY 3  
+**Date:** 18 November 2026  
+**Current Module:** Doctor Management  
+**Status:** In Progress
+
+## 1. Today's Objectives
+
+Started the Doctor Management module after working on the Department Management module.
+
+The objective is to develop a complete doctor management system with doctor profiles, specialization, qualifications, experience, consultation fees, and relationships with Hospital and Department.
+
+## 2. Package Structure Created
+
+Created the following packages inside:
+
+`com.medcore.hms.modules.doctor`
+
+```text
+doctor
+│
+├── controller
+│   └── DoctorController.java
+│
+├── dto
+│   ├── request
+│   │   └── DoctorRequest.java
+│   │
+│   └── response
+│       └── DoctorResponse.java
+│
+├── entity
+│   └── Doctor.java
+│
+├── enums
+│   ├── DoctorGender.java
+│   └── Specialization.java
+│
+├── mapper
+│   └── DoctorMapper.java
+│
+├── repository
+│   └── DoctorRepository.java
+│
+├── service
+│   ├── DoctorService.java
+│   │
+│   └── impl
+│       └── DoctorServiceImpl.java
+```
+
+## 3. Java Files Prepared
+
+1. Specialization.java
+2. DoctorGender.java
+3. Doctor.java
+4. DoctorRepository.java
+5. DoctorRequest.java
+6. DoctorResponse.java
+7. DoctorMapper.java
+8. DoctorService.java
+9. DoctorServiceImpl.java
+10. DoctorController.java
+
+## 4. Doctor Management Features
+
+- Doctor registration
+- Doctor profile management
+- Doctor specialization
+- Doctor qualifications
+- Years of experience
+- Consultation fees
+- Hospital relationship
+- Department relationship
+- Active and inactive doctor status
+
+## 5. Database Relationship Design
+
+- One Hospital can have multiple Doctors.
+- One Department can have multiple Doctors.
+- Each Doctor belongs to one Hospital.
+- Each Doctor belongs to one Department.
+
+Implemented the planned relationship using Spring Data JPA and Hibernate.
+
+## 6. REST API Development Plan
+
+| Method | Endpoint | Operation |
+|---|---|---|
+| POST | /api/doctors | Register Doctor |
+| GET | /api/doctors | Get All Doctors |
+| GET | /api/doctors/{id} | Get Doctor By ID |
+| PUT | /api/doctors/{id} | Update Doctor |
+| DELETE | /api/doctors/{id} | Delete Doctor |
+| GET | /api/doctors/department/{departmentId} | Get Doctors By Department |
+| GET | /api/doctors/hospital/{hospitalId} | Get Doctors By Hospital |
+| GET | /api/doctors/specialization/{specialization} | Get Doctors By Specialization |
+
+## 7. DAY 3 Work Progress
+
+- Started Doctor Management.
+- Created Doctor Management package structure.
+- Created DoctorGender.java.
+- Created and corrected Specialization.java.
+- Prepared Doctor entity and supporting Java classes.
+- Designed Hospital and Department relationships.
+- Prepared repository, DTO, mapper, service and controller implementations.
+
+**Note:** Code preparation is in progress. Compilation, relationship verification, and API testing are not yet confirmed complete.
+
+## 8. Pending Tasks
+
+1. Verify all package imports.
+2. Complete and verify Doctor.java.
+3. Resolve Eclipse compilation errors.
+4. Verify Hospital and Department entity relationships.
+5. Complete all service and controller implementations.
+6. Run the Spring Boot application.
+7. Test CRUD APIs using Postman.
+8. Verify the doctors table in MySQL.
+9. Implement proper validation and exception handling.
+
+## 9. Technology Stack
+
+- Java 21
+- Spring Boot 3.5.4
+- Maven
+- Spring Data JPA
+- Hibernate
+- MySQL
+- REST APIs
+- Postman
+- Eclipse IDE
+
+## 10. DAY 3 Conclusion
+
+Today, the Doctor Management module was started with its package architecture, enum classes, entity design, DTO structure, repository, mapper, service, and controller preparation.
+
+The next goal is to complete the Doctor Management module and test all APIs successfully.
+
+**Project:** MedCore HMS  
+**Current Progress:** DAY 3 – Doctor Management  
+**Next Target:** Complete Doctor Management and verify database operations.
+
+---
+
+"Consistency, practical learning, clean architecture, and continuous improvement are the keys to becoming a professional software engineer."
