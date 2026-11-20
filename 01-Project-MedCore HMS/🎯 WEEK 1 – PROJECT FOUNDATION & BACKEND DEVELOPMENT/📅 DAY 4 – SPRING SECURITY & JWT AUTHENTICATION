@@ -1,0 +1,34 @@
+📅 DAY 4 – SPRING SECURITY & JWT AUTHENTICATION
+Completed
+
+Main Objective: Implement secure user authentication and authorization using Spring Security and JWT.
+
+What we completed
+1. Configured Spring Security.
+2. Implemented user registration API.
+3. Implemented user login API.
+4. Integrated JWT token generation.
+5. Implemented JWT token validation.
+6. Created JWT authentication filter.
+7. Implemented custom UserDetailsService.
+8. Configured password encryption using BCrypt.
+9. Configured security rules for API endpoints.
+10. Tested authentication APIs using Postman.
+
+Important files and classes
+File name	Responsibility
+SecurityConfig.java	Security configuration
+JwtService.java	Generate and validate JWT
+JwtAuthenticationFilter.java	Validate incoming requests
+CustomUserDetailsService.java	Load user details
+AuthController.java	Registration and login APIs
+RegisterRequest.java	Registration request
+LoginRequest.java	Login request
+AuthResponse.java	Authentication response
+
+Day 4 result
+- User registration and login functionality.
+- JWT-based authentication.
+- Secure API access.
+- BCrypt password encryption.
+
